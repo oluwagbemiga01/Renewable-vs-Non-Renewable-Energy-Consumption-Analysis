@@ -99,7 +99,10 @@ DIVIDE(
     [Previous Year Renewable Energy]
 )
 ```
-
+---
+## Dashboard Overview
+![](https://github.com/oluwagbemiga01/Renewable-vs-Non-Renewable-Energy-Consumption-Analysis/blob/main/Energy%20flow.png)
+---
 ## Key Insights
 
 - Renewable energy accounted for over 58% of total energy consumption.
