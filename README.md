@@ -81,3 +81,62 @@ The fact table stores measurable energy metrics, including:
 ### Relationship Structure
 
 One-to-many relationships were established between dimension tables and the fact table to ensure accurate filtering and aggregation across the dashboard.
+
+![](https://github.com/oluwagbemiga01/Renewable-vs-Non-Renewable-Energy-Consumption-Analysis/blob/main/Model%20screenshot.png)
+
+## Key DAX Measures
+
+```DAX
+Renewable Energy Share =
+DIVIDE(
+    [Renewable Energy],
+    [Total Energy Consumption]
+)
+
+YoY Renewable Growth =
+DIVIDE(
+    [Current Year Renewable Energy] - [Previous Year Renewable Energy],
+    [Previous Year Renewable Energy]
+)
+```
+
+## Key Insights
+
+- Renewable energy accounted for over 58% of total energy consumption.
+- Seasonal analysis showed peak renewable energy performance during summer periods.
+- New York recorded positive year-over-year renewable growth, while other locations experienced declines.
+- Energy demand remained relatively stable throughout most months, with a major peak observed in August.
+
+## Business Recommendations
+
+- Increase renewable energy integration in underperforming locations.
+- Investigate causes of declining year-over-year renewable performance in selected regions.
+- Implement energy optimization strategies during peak consumption periods.
+- Improve sustainability tracking through enhanced emissions monitoring.
+- Expand seasonal energy forecasting capabilities for operational planning.
+
+The analysis reveals that renewable energy contributes significantly to overall energy consumption; however, performance varies across locations and seasonal periods.
+
+While some regions demonstrated positive renewable energy growth, others experienced declining year-over-year performance, highlighting potential inefficiencies or changing operational conditions.
+
+Seasonal trends indicate that renewable output peaks during summer periods, suggesting opportunities for strategic energy planning and improved sustainability optimization.
+
+Emission-related metrics suggest opportunities for further renewable energy adoption and sustainability improvements.
+
+## Tools & Technologies
+
+- Power BI
+- Power Query
+- DAX
+- Excel
+
+## What This Project Demonstrates
+
+- Energy analytics
+- Sustainability reporting
+- Business intelligence development
+- Data storytelling
+- KPI reporting
+- Time-series analysis
+- Power BI dashboard design
+- Analytical data modelling
