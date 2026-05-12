@@ -50,9 +50,34 @@ The dataset was cleaned and transformed using Power Query to improve analytical 
 
 Key transformation steps included:
 
-- Handling missing values
 - Standardizing location naming conventions
 - Correcting data types
 - Creating calculated energy share metrics
 - Preparing seasonal classifications
 - Validating consumption totals
+
+## Data Modelling
+
+A star schema data model was implemented to support efficient analytical reporting and improve dashboard performance.
+
+The model consists of a central fact table containing energy consumption metrics connected to dimension tables describing dates.
+
+### Fact Table
+
+The fact table stores measurable energy metrics, including:
+
+- Renewable Energy Consumption
+- Non-Renewable Energy Consumption
+- Total Energy Usage
+- Emission Metrics
+
+### Dimension Tables
+
+| Dimension Table | Purpose |
+|---|---|
+| Dim_Date | Supports time-based analysis |
+
+
+### Relationship Structure
+
+One-to-many relationships were established between dimension tables and the fact table to ensure accurate filtering and aggregation across the dashboard.
